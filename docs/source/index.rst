@@ -9,6 +9,7 @@ Giotto Suite
  
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
+   Giotto in the Cloud <subsections/trygiotto/terra.rst>
    Contribute <contribute.rst> 
 
 .. toctree::
