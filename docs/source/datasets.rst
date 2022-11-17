@@ -85,7 +85,7 @@ Visium
         :link: subsections/datasets/cytassist_visium
         :link-type: doc
 
-        .. image:: images/dataset_page/1-spatplot2D.png
+        .. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/21-spatPlot2D.png?raw=true
 
 *********************
 RNA Multiplex Imaging
