@@ -17,6 +17,7 @@ Tutorials
     Visium Mouse Kidney <subsections/datasets/mouse_visium_kidney>
     Visium Mouse Brain <subsections/datasets/mouse_visium_brain>
     Visium Prostate Integration <subsections/datasets/visium_prostate_integration>
+    CytAssist Human Lung Cancer (FFPE) <subsections/datasets/cytassist_visium>
     Mini SeqFISH <subsections/datasets/mini_seqFISH>
     SeqFISH+ Cortex <subsections/datasets/seqFISH_cortex>
     osmFISH SS Cortex <subsections/datasets/osmFISH_mouse_SS_cortex>
@@ -80,6 +81,11 @@ Visium
 
         .. image:: images/dataset_page/visium_prostate_summary.png
 
+    .. card:: CytAssist Visium
+        :link: subsections/datasets/cytassist_visium
+        :link-type: doc
+
+        .. image:: images/dataset_page/1-spatplot2D.png
 
 *********************
 RNA Multiplex Imaging
