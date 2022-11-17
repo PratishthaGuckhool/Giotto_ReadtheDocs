@@ -362,6 +362,25 @@ Visualize aligned tissue with number of features after processing
 6. Cell Type Enrichment
 =======================
 
+| Visium spatial transcriptomics does not provide single-cell
+  resolution, making cell type annotation a harder problem. Giotto
+  provides several ways to calculate enrichment of specific cell-type
+  signature gene lists:
+| - PAGE
+| - hypergeometric test
+| - Rank
+| - `DWLS
+  Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__ Corresponded Single cell dataset can be generated from
+  `here <http://mousebrain.org/>`__. 
+  Giotto_SC is processed from the
+  downsampled `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file and can also be downloaded from getSpatialDataset.
+  
+PAGE 
+----
+The cell-type specific signature gene list was obtained from a previous study focused on investigating the therapy-induced evolution of lung cancer revealed by single-cell RNA sequencing. More information about the paper and scRNA-seq dataset can be found `here <https://doi.org/10.1016/j.cell.2020.07.017>`_.
+
+.. _here: https://doi.org/10.1016/j.cell.2020.07.017
+
 .. container:: cell
 
    .. code:: r
