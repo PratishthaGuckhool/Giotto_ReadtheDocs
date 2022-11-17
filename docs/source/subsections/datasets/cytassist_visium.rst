@@ -14,7 +14,7 @@ More information about this dataset can be found `here <https://www.10xgenomics.
 .. _here: https://www.10xgenomics.com/resources/datasets/human-lung-cancer-ffpe-2-standard
 
 .. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/CytAssist%20Visium%20workflow.png?raw=true
-   :width: 50.0%
+   :width: 100.0%
 
 Start Giotto
 ============
