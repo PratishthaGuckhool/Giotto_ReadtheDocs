@@ -63,7 +63,8 @@ The minimum requirements are
    .. code:: r
 
       # Provide path to visium folder
-      data_path = "https://github.com/PratishthaGuckhool/spatial-datasets/tree/master/data/2022_cytassist_humanlungcancer"
+      data_path = paste0(temp_dir, '/data/')
+      getSpatialDataset(dataset = 'cytassist_lungcancer', directory = data_path, method = 'wget')
 
       # Create Giotto object
         visium_lungcancer = createGiottoVisiumObject(visium_dir = data_path,
