@@ -23,7 +23,7 @@ Usage
    getSpatialDataset(
      dataset = c("ST_OB1", "ST_OB2", "codex_spleen", "cycif_PDAC", "starmap_3D_cortex",
        "osmfish_SS_cortex", "merfish_preoptic", "mini_seqFISH", "seqfish_SS_cortex",
-       "seqfish_OB", "slideseq_cerebellum", "Human_PCa_scRNAseq", "Mouse_brain_scRNAseq"),
+       "seqfish_OB", "slideseq_cerebellum", "Human_PCa_scRNAseq", "Mouse_brain_scRNAseq", "cytassist_visium"),
      directory = getwd(),
      ...
    )
