@@ -25,41 +25,30 @@ To run the current vignette you need to install the Giotto Suite branch.
 
    .. code:: r
 
-      if (!"Giotto" %in% installed.packages()) {
-      remotes::install_github("RubD/Giotto@suite")
+      # Ensure Giotto Suite and GiottoData packages are installed
+      if(!"Giotto" %in% installed.packages()) {
+         devtools::install_github("drieslab/Giotto@Suite")
       }
+      
+      if(!"Giotto" %in% installed.packages()) {
+         devtools::install_github("drieslab/GiottoData")
+      }
+
       library(Giotto)
-
-Install Python modules (optional)
-----------------------------------
-To run this vignette you need to install all the necessary Python modules.
-
-This can be done manually, see https://rubd.github.io/Giotto_site/articles/installation_issues.html#python-manual-installation
-
-This can be done within R using our installation tools (installGiottoEnvironment), see https://rubd.github.io/Giotto_site/articles/tut0_giotto_environment.html for more information.
-
-
-Set Giotto instructions (optional)
-----------------------------------
-
-.. container:: cell
-
-   .. code:: r
-   
-      set giotto python path
-      # set python path to your preferred python version path
-      # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-      python_path = NULL
-      if(is.null(python_path)) {
-      installGiottoEnvironment()
+      library(GiottoData)
+      
+      # Ensure the Python environment for Giotto has been installed
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+         # The following command need only be run once to install the Giotto environment.
+         installGiottoEnvironment()
       }
 
       # to automatically save figures in save_dir set save_plot to TRUE
       temp_dir = getwd()
       myinstructions = createGiottoInstructions(save_dir = temp_dir,
                                           save_plot = TRUE,
-                                          show_plot = TRUE,
-                                          python_path = python_path)
+                                          show_plot = TRUE)
                                           
 1. Create a Giotto object
 =========================
