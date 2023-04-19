@@ -106,7 +106,7 @@ Part 1: R Giotto Requirements
 
 				library(devtools) # If not installed: install.packages('devtools')
 				library(remotes)  #If not installed: install.packages('remotes')
-				remotes::install_github("RubD/Giotto") 
+				remotes::install_github("drieslab/Giotto") 
 
 			.. warning:: 	
 				If you are having compilation (gfortran) problems check goftran.
@@ -115,7 +115,7 @@ Part 1: R Giotto Requirements
 
 			.. code-block::
 
-				remotes::install_github("RubD/Giotto@cless") 
+				remotes::install_github("drieslab/Giotto@cless") 
 
 			Next, run the following code to load giotto intto your R workspace. 
 
